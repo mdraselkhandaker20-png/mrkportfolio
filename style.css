@@ -369,7 +369,7 @@ nav {
   align-items: start;
 }
 
-.about-sidebar { position: sticky; top: 100px; }
+.about-sidebar { position: sticky; top: 100px; }        
 
 .about-photo-placeholder {
   width: 100%;
