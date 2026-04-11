@@ -107,13 +107,13 @@ nav {
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--gold);
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   padding: 0.4rem 1rem;
   margin-bottom: 2rem;
 }
 
 .hero-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: clamp(2.8rem, 6vw, 5rem);
   line-height: 1.1;
   color: var(--white);
@@ -124,7 +124,8 @@ nav {
 
 .hero-desc {
   font-size: 1.05rem;
-  color: var(--gray);
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--gold);
   line-height: 1.8;
   margin-bottom: 2.5rem;
   max-width: 520px;
