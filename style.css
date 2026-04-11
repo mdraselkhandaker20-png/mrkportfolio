@@ -33,8 +33,7 @@ nav {
   padding: 1.2rem 4rem;
   background: rgba(1, 21, 51, 0.92);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-}
+  }
 
 .nav-logo {
   font-family: 'Playfair Display', serif;
