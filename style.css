@@ -486,4 +486,5 @@ footer {
   .section { padding: 4rem 1.5rem; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+  .page { padding-top: 90px; }
 }
