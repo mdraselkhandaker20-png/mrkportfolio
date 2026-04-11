@@ -125,7 +125,7 @@ nav {
 .hero-desc {
   font-size: 1.05rem;
   font-family: 'Times New Roman', Times, serif;
-  color: var(--gold);
+  color: var(--gray);
   line-height: 1.8;
   margin-bottom: 2.5rem;
   max-width: 520px;
