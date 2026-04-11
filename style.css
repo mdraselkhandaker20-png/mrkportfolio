@@ -254,17 +254,6 @@ nav {
   color: var(--gray);
   line-height: 1.7;
 }
-
-.card-tag {
-  display: inline-block;
-  font-size: 0.7rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--gold);
-  border: 1px solid var(--border);
-  padding: 0.2rem 0.6rem;
-  margin-top: 1rem;
-}
     
 
 /* ─── SKILLS ─── */
