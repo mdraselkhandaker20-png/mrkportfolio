@@ -64,6 +64,12 @@
             <button type="submit" class="btn-primary" style="border:none; cursor:pointer; text-align:center;">Send Message</button>
           </form>
       </div>
+      <script>
+document.querySelector("form").addEventListener("submit", function(e){
+  const msg = document.getElementById("msg");
+  msg.innerHTML = "⏳ Sending...";
+});
+</script>
     </div>
   </div>
 </div>
