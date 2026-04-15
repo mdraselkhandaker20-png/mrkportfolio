@@ -55,13 +55,13 @@
       </div>
 
       <div>
-        <div class="contact-form">
-          <input type="text" class="form-input" placeholder="Your Name">
-          <input type="email" class="form-input" placeholder="Your Email">
-          <input type="text" class="form-input" placeholder="Subject">
-          <textarea class="form-textarea" rows="5" placeholder="Your Message..."></textarea>
-          <button class="btn-primary" style="border:none; cursor:pointer; text-align:center;">Send Message</button>
-        </div>
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+            <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+            <input type="text" name="subject" class="form-input" placeholder="Subject" required>
+            <textarea name="message" class="form-textarea" rows="5" placeholder="Your Message..." required></textarea>
+            <button type="submit" class="btn-primary" style="border:none; cursor:pointer; text-align:center;">Send Message</button>
+          </form>
       </div>
     </div>
   </div>
