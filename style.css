@@ -497,10 +497,3 @@ footer {
   line-height: 1.8;
   font-size: 0.95rem;
 }
-
-/* 🔥 Mobile responsive */
-@media (max-width: 900px) {
-  .poem-grid {
-    grid-template-columns: 1fr;
-  }
-}
