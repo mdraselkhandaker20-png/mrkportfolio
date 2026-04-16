@@ -477,6 +477,10 @@ footer {
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }
   .page { padding-top: 90px; } 
   .about-sidebar { position: relative; top: 0; }
+  .poem-grid {
+    grid-template-columns: 1fr;
+  }
+}
 }
 /*-meherban-*/
 .poem-grid {
