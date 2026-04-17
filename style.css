@@ -112,7 +112,7 @@ nav {
 }
 
 .hero-name {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(2.8rem, 6vw, 5rem);
   line-height: 1.1;
   color: var(--white);
@@ -123,7 +123,7 @@ nav {
 
 .hero-desc {
   font-size: 1.05rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Playfair Display', serif;
   color: var(--gray);
   line-height: 1.8;
   margin-bottom: 2.5rem;
