@@ -549,6 +549,13 @@ footer {
   padding: 3rem 2rem;
   border-top: 1px solid var(--border);
 }
+.suchi-hint {
+  font-size: 0.75rem;
+  color: var(--gray);
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
 .suchi-label {
   font-size: 0.7rem;
   letter-spacing: 4px;
