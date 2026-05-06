@@ -178,7 +178,7 @@ nav {
 }
 .hero-img img {
   width: 600px;
-  height: 800px;
+  height: 500px;
   object-fit: cover;
   border-radius: 20px;
   filter: contrast(1.1) brightness(0.9);
