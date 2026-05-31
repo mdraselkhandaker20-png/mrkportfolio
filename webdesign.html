@@ -6,6 +6,118 @@
   <title>Web Design — Md Rasel Khandaker</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    .project-card {
+      background: var(--navy-mid);
+      border: 1px solid var(--border);
+      transition: border-color 0.3s, transform 0.3s;
+      animation: fadeUp 0.7s ease both;
+    }
+    .project-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-4px);
+    }
+    .project-preview {
+      width: 100%;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      background: #0a1628;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .project-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      transition: transform 0.5s ease;
+    }
+    .project-card:hover .project-preview img {
+      transform: scale(1.04);
+    }
+    .preview-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      opacity: 0.3;
+    }
+    .preview-placeholder span {
+      font-size: 2.5rem;
+    }
+    .preview-placeholder p {
+      font-size: 0.72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gray);
+    }
+    .project-body {
+      padding: 1.4rem 1.6rem 1.6rem;
+    }
+    .project-url {
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .project-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--white);
+      margin-bottom: 0.6rem;
+    }
+    .project-desc {
+      font-size: 0.88rem;
+      color: var(--gray);
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+    }
+    .project-stack {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.2rem;
+    }
+    .stack-tag {
+      font-size: 0.62rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--border);
+      padding: 2px 8px;
+    }
+    .project-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .project-status {
+      font-size: 0.68rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gray);
+    }
+    .project-status.live::before {
+      content: '● ';
+      color: #4caf82;
+    }
+    .project-status.progress::before {
+      content: '● ';
+      color: var(--gold);
+    }
+    .coming-soon {
+      border-style: dashed !important;
+      opacity: 0.45;
+    }
+  </style>
 </head>
 <body>
 
@@ -27,42 +139,89 @@
     <h2 class="section-title">Web Design</h2>
     <div class="section-divider"></div>
     <p class="card-text" style="max-width: 600px; margin-bottom: 3rem;">
-      Web design and development is one of my creative interests — from simple static sites built with HTML and CSS, to dynamic full-stack applications using Python, JavaScript, and modern web frameworks. I enjoy building clean, functional, and well-designed digital experiences.
+      From static sites built with HTML and CSS to dynamic full-stack applications using Python and JavaScript — I enjoy designing and building clean, functional digital experiences.
     </p>
 
     <div class="cards-grid">
 
       <!-- Portfolio Site -->
-      <div class="card">
-        <div class="card-icon">🌐</div>
-        <h3 class="card-title">Personal Portfolio</h3>
-        <p class="card-text">
-          Designed and developed entirely from scratch using HTML and CSS — no frameworks or JavaScript libraries. Features a navy and gold aesthetic, Playfair Display typography, smooth scroll, and a fully responsive layout.
-        </p>
-        <br>
-        <p class="card-text" style="font-size: 0.75rem; color: var(--gold); letter-spacing: 1px; margin-bottom: 1rem;">HTML · CSS</p>
-        <a href="https://mdraselkhandaker.com" target="_blank" class="btn-outline" style="display:inline-block;">View Site →</a>
+      <div class="project-card">
+        <div class="project-preview">
+          <!-- Replace with actual screenshot: img/webdesign/portfolio-preview.jpg -->
+          <div class="preview-placeholder">
+            <span>🌐</span>
+            <p>Add screenshot</p>
+          </div>
+        </div>
+        <div class="project-body">
+          <span class="project-url">mdraselkhandaker.com</span>
+          <div class="project-title">Personal Academic Portfolio</div>
+          <p class="project-desc">
+            A personal portfolio website showcasing academic research, skills, and creative interests. Designed and developed entirely from scratch — no frameworks, no templates.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">GitHub Pages</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status live">Live</span>
+            <a href="https://mdraselkhandaker.com" target="_blank" class="btn-outline" style="display:inline-block; padding: 0.5rem 1.2rem; font-size:0.72rem;">Visit Site →</a>
+          </div>
+        </div>
       </div>
 
       <!-- Audio/Video Call App -->
-      <div class="card">
-        <div class="card-icon">📹</div>
-        <h3 class="card-title">Audio & Video Call App</h3>
-        <p class="card-text">
-          A real-time audio and video communication web application built for English speaking practice. Supports live peer-to-peer calls directly in the browser with a clean, minimal interface.
-        </p>
-        <br>
-        <p class="card-text" style="font-size: 0.75rem; color: var(--gold); letter-spacing: 1px; margin-bottom: 1rem;">Python · Flask · WebRTC · JavaScript</p>
-        <a href="#" class="btn-outline" style="display:inline-block;">Coming Soon</a>
+      <div class="project-card">
+        <div class="project-preview">
+          <!-- Replace with actual screenshot: img/webdesign/callapp-preview.jpg -->
+          <div class="preview-placeholder">
+            <span>📹</span>
+            <p>Add screenshot</p>
+          </div>
+        </div>
+        <div class="project-body">
+          <span class="project-url">English Speaking Practice App</span>
+          <div class="project-title">Audio & Video Call Platform</div>
+          <p class="project-desc">
+            A real-time audio and video communication web application designed for English speaking practice. Supports live peer-to-peer calls directly in the browser with a clean, minimal interface.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Flask</span>
+            <span class="stack-tag">WebRTC</span>
+            <span class="stack-tag">JavaScript</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status progress">In Progress</span>
+            <a href="#" class="btn-outline" style="display:inline-block; padding: 0.5rem 1.2rem; font-size:0.72rem; opacity:0.5; pointer-events:none;">Coming Soon</a>
+          </div>
+        </div>
       </div>
 
-      <!-- Placeholder -->
-      <div class="card" style="border-style: dashed; opacity: 0.5;">
-        <div class="card-icon">✦</div>
-        <h3 class="card-title">More Coming Soon</h3>
-        <p class="card-text">
-          New projects including e-commerce and full-stack applications will be added here as they are completed.
-        </p>
+      <!-- Coming Soon -->
+      <div class="project-card coming-soon">
+        <div class="project-preview">
+          <div class="preview-placeholder">
+            <span>✦</span>
+            <p>Next project</p>
+          </div>
+        </div>
+        <div class="project-body">
+          <span class="project-url">Coming Soon</span>
+          <div class="project-title">More Projects</div>
+          <p class="project-desc">
+            New projects including e-commerce and full-stack applications will be added here as they are completed.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">SQL</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-status progress">Planned</span>
+          </div>
+        </div>
       </div>
 
     </div>
