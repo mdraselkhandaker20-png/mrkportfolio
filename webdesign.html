@@ -1,8 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Design — Md Rasel Khandaker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
+<body>
 
 <nav>
   <a href="index.html" class="nav-logo">Md Rasel Khandaker</a>
@@ -18,16 +23,35 @@
 
 <div class="page">
   <div class="section">
-    <p class="section-label">Design Portfolio</p>
+    <p class="section-label">Hobbies · Web Design</p>
     <h2 class="section-title">Web Design</h2>
     <div class="section-divider"></div>
-    <div style="text-align:center; padding: 4rem 2rem; border: 1px solid var(--border);">
-      <div style="font-size: 3rem; margin-bottom: 1.5rem;">🌐</div>
-      <p class="section-label" style="margin-bottom: 1rem;">Portfolio Under Preparation</p>
-      <p style="color: var(--gray); max-width: 480px; margin: 0 auto 2rem; line-height: 1.8;">
-        Website design projects and case studies are currently being documented and will be available shortly. For website design inquiries or collaborations, feel free to contact directly.
-      </p>
-      <a href="contact.html" class="btn-outline" style="display:inline-block;">Request a Design</a>
+    <p class="card-text" style="max-width: 560px; margin-bottom: 3rem;">
+      I design and build websites using HTML and CSS — focused on clean layouts, elegant typography, and professional aesthetics. Below are projects I have designed and developed personally.
+    </p>
+
+    <div class="cards-grid">
+
+      <!-- Portfolio Site -->
+      <div class="card">
+        <div class="card-icon">🌐</div>
+        <h3 class="card-title">Personal Portfolio</h3>
+        <p class="card-text">
+          Designed and developed entirely from scratch using HTML and CSS — no frameworks, no JavaScript libraries. Features a navy and gold aesthetic with Playfair Display typography, smooth scroll, and fully responsive layout.
+        </p>
+        <br>
+        <a href="https://mdraselkhandaker.com" target="_blank" class="btn-outline" style="display:inline-block;">View Site →</a>
+      </div>
+
+      <!-- Placeholder for future projects -->
+      <div class="card" style="border-style: dashed; opacity: 0.5;">
+        <div class="card-icon">✦</div>
+        <h3 class="card-title">More Coming Soon</h3>
+        <p class="card-text">
+          New web design projects will be added here as they are completed.
+        </p>
+      </div>
+
     </div>
   </div>
 </div>
@@ -36,3 +60,6 @@
   <p style="color: var(--gold); font-size: 0.75rem; letter-spacing: 2px;">AI & IoT Researcher · Published Poet</p>
   <p style="color: var(--gold); font-size: 0.75rem; letter-spacing: 2px;">© 2026 Md Rasel Khandaker. All rights reserved.</p>
 </footer>
+
+</body>
+</html>
