@@ -132,6 +132,7 @@ nav {
 
 .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
 
+
 .btn-primary {
   background: var(--gold);
   color: var(--navy);
