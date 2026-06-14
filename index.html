@@ -70,6 +70,124 @@
     </div>
   </div>
 </div>
+
+<!-- ── PHOTO GALLERY SECTION ── -->
+<!-- Ei section ta about.html e footer er age paste koro -->
+<!-- style.css er niche gallery-style.css er content paste koro -->
+
+<div class="section gallery-section">
+  <p class="section-label">Academic Life</p>
+  <h2 class="section-title">Photo Gallery</h2>
+  <div class="section-divider"></div>
+
+  <!-- Main Slideshow -->
+  <div class="gallery-slideshow" id="main-slideshow">
+    <!-- Replace src with your actual images -->
+    <img src="images/gallery/photo1.jpg" alt="Photo 1" class="active" />
+    <img src="images/gallery/photo2.jpg" alt="Photo 2" />
+    <img src="images/gallery/photo3.jpg" alt="Photo 3" />
+    <img src="images/gallery/photo4.jpg" alt="Photo 4" />
+    <img src="images/gallery/photo5.jpg" alt="Photo 5" />
+    <img src="images/gallery/photo6.jpg" alt="Photo 6" />
+  </div>
+
+  <!-- Dots -->
+  <div class="gallery-dots" id="gallery-dots">
+    <div class="gallery-dot active" onclick="goToSlide(0)"></div>
+    <div class="gallery-dot" onclick="goToSlide(1)"></div>
+    <div class="gallery-dot" onclick="goToSlide(2)"></div>
+    <div class="gallery-dot" onclick="goToSlide(3)"></div>
+    <div class="gallery-dot" onclick="goToSlide(4)"></div>
+    <div class="gallery-dot" onclick="goToSlide(5)"></div>
+  </div>
+
+  <!-- Thumbnail Grid -->
+  <div class="gallery-grid">
+
+    <div class="gallery-thumb" onclick="goToSlide(0)">
+      <div class="gallery-thumb-img">
+        <img src="images/gallery/photo1.jpg" alt="Photo 1" />
+      </div>
+      <div class="gallery-thumb-caption">
+        <strong>ICTIM 2026 Conference</strong>
+        Paper presentation · Malaysia
+      </div>
+    </div>
+
+    <div class="gallery-thumb" onclick="goToSlide(1)">
+      <div class="gallery-thumb-img">
+        <img src="images/gallery/photo2.jpg" alt="Photo 2" />
+      </div>
+      <div class="gallery-thumb-caption">
+        <strong>MSc Research Lab</strong>
+        IoT system development · MMU
+      </div>
+    </div>
+
+    <div class="gallery-thumb" onclick="goToSlide(2)">
+      <div class="gallery-thumb-img">
+        <img src="images/gallery/photo3.jpg" alt="Photo 3" />
+      </div>
+      <div class="gallery-thumb-caption">
+        <strong>Multimedia University</strong>
+        Cyberjaya campus · Malaysia
+      </div>
+    </div>
+
+    <div class="gallery-thumb" onclick="goToSlide(3)">
+      <div class="gallery-thumb-img">
+        <img src="images/gallery/photo4.jpg" alt="Photo 4" />
+      </div>
+      <div class="gallery-thumb-caption">
+        <strong>Research Presentation</strong>
+        Smart factory quality monitoring
+      </div>
+    </div>
+
+    <div class="gallery-thumb" onclick="goToSlide(4)">
+      <div class="gallery-thumb-img">
+        <img src="images/gallery/photo5.jpg" alt="Photo 5" />
+      </div>
+      <div class="gallery-thumb-caption">
+        <strong>Academic Event</strong>
+        Description here
+      </div>
+    </div>
+
+    <div class="gallery-thumb" onclick="goToSlide(5)">
+      <div class="gallery-thumb-img">
+        <img src="images/gallery/photo6.jpg" alt="Photo 6" />
+      </div>
+      <div class="gallery-thumb-caption">
+        <strong>Academic Event</strong>
+        Description here
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Gallery JavaScript — footer er age rakho -->
+<script>
+  const gSlides = document.querySelectorAll('#main-slideshow img');
+  const gDots = document.querySelectorAll('#gallery-dots .gallery-dot');
+  let gCurrent = 0;
+
+  function goToSlide(n) {
+    gSlides[gCurrent].classList.remove('active');
+    gDots[gCurrent].classList.remove('active');
+    gCurrent = n;
+    gSlides[gCurrent].classList.add('active');
+    gDots[gCurrent].classList.add('active');
+  }
+
+  function nextGallerySlide() {
+    goToSlide((gCurrent + 1) % gSlides.length);
+  }
+
+  setInterval(nextGallerySlide, 4000);
+</script>
+
 <footer>
   <p style="color: var(--gold); font-size: 0.75rem; letter-spacing: 2px;">AI & IoT Researcher · Published Poet</p>
   <p style="color: var(--gold); font-size: 0.75rem; letter-spacing: 2px;">© 2026 Md Rasel Khandaker. All rights reserved.</p>
